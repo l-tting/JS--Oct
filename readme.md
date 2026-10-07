@@ -108,6 +108,8 @@ num = 12
            -> trimLeft() or trimStart()
            -> trimRight() or trimEnd()
 
+12. split() -> splits a string into substrings using a speicified char
+13. replace() -> replace a char with another
 *Numeric Operations*
 1. Addition -> +
 2. Subtraction -> -
@@ -117,8 +119,12 @@ num = 12
 6. Exponent -> ** e.g. 2**4 -> 2 * 2 * 2 * 2
 7. increment -> increase initial value by 1
 8. decrement -> decrease initial value by 1
+
 *Comments*
 -> A way to document code 
+1.Single line comments 
+2.Block Comments  
+ //
 
 
 
@@ -126,4 +132,59 @@ num = 12
 1. Find out what the followingg string methods do :
    -> split()    -> replace()
 2. Task on slide 56
+
+
+*JS OPERATORS*
+*1.Arithmetic Operators*
+    -> used for arithmetic functions
+    -> + , - , / , * , **, %, ++ , --
+*2.Comparison Operators*
+  -> used to compare two or more values and return a boolean
+  -> == : loose equality sign : checks for value alone and ignores data types -> allows for type coercion
+  -> === : strict equality sign : checks for both value and data type -> doesnt allow for type coercion 
+  -> != : loose inequality sign
+  -> !== : strict inequality sign
+  -> > , < , >= , <=
+*3.Logical Operators*
+   -> used for logical operations
+   -> logical and : returns true only if all conditions are true ---> &&
+   -> logical or : returns true if at least one is true ----> ||
+   -> logical not : negates a boolean value  ----> !
+*4.Assignment Operators*
+   -> used to assign values to variables
+   -> = : default assignment operator
+   -> += : add then assign
+   -> -= : subtract then assign 
+   -> /= , *= ,**=, %=
+
+
+   + -> has 2 functions
+     -> strings (concat)
+     -> numeric values (sum)
+
+     *Polymorphism* -> where an object takes more than form / function
+        -> method and operator overloading
+        -> operator overloading : an operator has more than more than one function e.g. (+)
+
+
+"5" , 5 => 5 + "5" => "5" + "5" = "55"
+
+5 * "5" => 5 * 5 = 25
+
+
+*Type coercion vs Type conversion*
+*Type coercion*  -> the automatic / implicit  conversion of data from one type to another -> done 
+   by the program / language
+*Type conversion* -> the explicit conversion of data from one type to another -> done by the 
+   programmer
+
+
+   *N/B:* -> The only string that can be converted to a number is a digit string
+   *digit string* -> a string made up only of numbers
+
+
+   let str = "123"
+
+   5 == 5 -> true
+
 
