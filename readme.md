@@ -188,3 +188,39 @@ num = 12
    5 == 5 -> true
 
 
+*CONDITIONAL STATEMENTS*
+-> These are structures that allow a program to make decisions based on some predefined conditions after taking an input
+
+-> Types of conditional statements:
+1. if statement
+2. ternary operator
+
+*if statement*
+-> uses the if keyword 
+-> syntax :
+     if ( condition..){
+         //what happens if the condition is met / true
+     }else{
+        // what happens if the condition isnt met / is false
+     }
+
+  *taking user input in JS*
+  -> We take user input using prompt()
+  -> Any data coming from user input is usually a string
+
+
+  *multiple conditions with if statements*
+  if (condition 1...){
+    //what happens if condition 1 is met
+  }else if(condition 2){
+    //what happens if condition 2 is met
+  }else{
+    //what happens if all conditions arent met
+  }
+
+
+  *write a program that takes 3 user inputs as numbers and compares which is the largest -> output the largest of the 3*
+
+  *task on conditional statements*
+  -> slide 69 : do all questions
+  
