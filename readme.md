@@ -224,3 +224,64 @@ num = 12
   *task on conditional statements*
   -> slide 69 : do all questions
   
+
+  Create a variable called year and enter the a random year. Check if the year is a leap year or not. A leap year is a year that is divisible by 4  not divisible by 100 or divisible  by 400.
+   -> if a year is not divisible 4 , it is definitely not leap
+   -> if a year is divisible by only 100 , it is also definitely not leap
+   -> but if a year is divisible by both 100 and 400 , it is automatically leap
+
+
+
+   1800 -> by 100
+        -> 400
+
+   1600 , 2000-> divisible by 100 and 400 
+
+
+   *ternary operator*
+-> Is a shorthand / a simpler way to write a simple if-else statement
+-> Just like a simple if-else statement , it is only used when there is one condition being checked
+-> Symbol : ? 
+
+-> syntax : condition ?  what happens if condition is true : what happens if condition is false
+
+
+*JS COLLECTIONS*
+-> Are structures that can hold more than one value at a time
+1.Arrays
+2.Objects
+
+*JS ARRAYS*
+-> Are the equivalent of Python lists
+   *properties of arrays*
+1.They can hold multiple values of any data type
+2.They are ordered -> array items can be accessed via index
+  *N/B:* By default JS arrays dont allow -ve indexing , to use -ve indexing we use a method called at()
+3.They are mutable -> values can be changed 
+4.They have access to methods
+5.Values in an array are comma-separated 
+
+
+  *JS OPERATIONS*
+1.Accessing array items - using indexing 
+     -> default indexing []
+     -> use at() method : allows for -ve indexing
+2.Updating array values -> use indexing
+3.Length - gives the no of items in an array
+      -> by default when you output an array it shows length 
+4.Slicing -> extracts a portion of an array
+      -> slice(start, end) : end point not inclusive
+      slice (2,6)
+5.Adding items 
+    -> push() : add items at the end of an array
+    -> unshift() : add items at the start of an array
+6.Removing items
+    -> pop() : removes the last element in an array
+    -> shift() : removes the first element in an array
+7.Splice : can be used to remove , add or replace items in an array
+   -> splice(start, delete_count, items to add)
+8.Concat
+
+   *Task*
+1.Find out what concat(), includes(),reverse(),sort() methods do and attempt to use them
+2.Do all tasks on slide 72 & 73

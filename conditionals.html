@@ -32,6 +32,28 @@
             console.log(`${num3} is the largest`)
          }
          
+
+
+         let year = Number(prompt("Enter a random year"))
+
+         if (((year %4==0) && (year %100 !=0)) || (year % 400 ==0)){
+             console.log("Year is leap")
+         }else{
+            console.log("Year is not leap")
+         }
+
+         //ternary operator
+
+         let number = Number(prompt("Enter a random number"))
+
+         let is_even = number %2 == 0 ? "Even" : "Odd"
+         console.log(is_even)
+         
+         // use a ternary operator to write a program that checks whether a person is eligible to drive , assume legal age of 18
+         let age = Number(prompt("Enter a random age"))
+         let can_drive = age >= 18 ? "can drive" :"cannot drive"
+         console.log(can_drive)
+
     </script>
 </body>
 </html>
