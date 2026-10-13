@@ -45,4 +45,10 @@ numbers.splice(5,2,"four","five")
 console.log(numbers) // [1, 2, 3, 'JS', 'C++', 'four', 'five']
 
 
+let new_array = [100,20,3,1,230]
+console.log(new_array.sort()) //(5) [1, 100, 20, 230, 3]
+
+
+
+
 

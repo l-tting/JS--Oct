@@ -280,8 +280,104 @@ num = 12
     -> shift() : removes the first element in an array
 7.Splice : can be used to remove , add or replace items in an array
    -> splice(start, delete_count, items to add)
-8.Concat
+8.Concat -> combining two or more arrays
+9.reverse -> reverses the order of an array 
+10.includes -> checks whether an element is contained in an array
+11.sort -> sorts array items in alphabetical order
 
    *Task*
 1.Find out what concat(), includes(),reverse(),sort() methods do and attempt to use them
 2.Do all tasks on slide 72 & 73
+
+
+*JS OBJECTS*
+-> Are collections that store data in key-value pair format
+-> they are the equivalent of Python dictionaries
+
+   *properties of objects*
+1.Store data in key-value pairs
+2.Key is used to access the value
+3.They key must be unique
+4.They keys are considered to be strings
+5.Values can be of any data type
+
+*property*
+-> property = key + value
+*how to access values*
+ -> use the key to access the values
+ -> we have 2 ways of accessing values using keys:
+  *1.Dot Notation*
+     -> used when the key follows variable / identifier naming rules 
+  *2.Bracket notation*
+     -> used whether the key follows variable / identifier naming rules or not
+
+*Object methods*
+1.Object.keys() -> returns all keys of an object in an array
+2.Object.values() ->returns all object values in an array
+3.Object.entries() -> returns each key value pair in a subarray and all subarrays in on one array
+*Complex structures*
+
+*Task*
+1. slide 78 & 79
+
+2. In the structure below, output: "PostgreSQL" and "Deploy to Netlify"
+
+      const userProfile = {
+      id: 101,
+      name: {
+         first: "Brian",
+         last: "Letting",
+      },
+      contact: {
+         email: "jeff@example.com",
+         phones: ["+254700000001", "+254700000002"],
+      },
+      address: {
+         current: {
+            city: "Nairobi",
+            street: "Westlands Ave",
+            postalCode: "00100",
+         },
+         previous: [
+            {
+            city: "Eldoret",
+            street: "Main Street",
+            postalCode: "30100",
+            },
+            {
+            city: "Kisumu",
+            street: "Lake View Road",
+            postalCode: "40100",
+            },
+         ],
+      },
+      preferences: {
+         theme: "dark",
+         language: "en",
+         notifications: {
+            email: true,
+            sms: false,
+            push: ["promotions", "updates"],
+         },
+      },
+      projects: [
+         {
+            id: 1,
+            name: "POS System",
+            technologies: ["React", "FastAPI", "PostgreSQL"],
+            tasks: [
+            { title: "Set up DB", done: true },
+            { title: "Design UI", done: false },
+            ],
+         },
+         {
+            id: 2,
+            name: "Portfolio Website",
+            technologies: ["HTML", "CSS", "JavaScript"],
+            tasks: [
+            { title: "Create About Page", done: true },
+            { title: "Deploy to Netlify", done: false },
+            ],
+         },
+      ],
+      };
