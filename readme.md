@@ -394,4 +394,6 @@ num = 12
 
 5. Electricity billing: Calculate a bill using these rates: the first 100 units cost 5 per unit, the next 100 cost 8 per unit, and units above 200 cost 12 per unit.
 
+----> push your work to github and share your github link in the group-------->
+
 *JS LOOPS*
