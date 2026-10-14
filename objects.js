@@ -23,6 +23,9 @@ console.log(Object.values(person))//(5) ['Alice Kamau', 21, '124 Monrovia St', t
 
 console.log(Object.entries(person))//[Array(2), Array(2), Array(2), Array(2), Array(2)]
 
+person.email = "alice@gmail.com"
+console.log(person)
+
 
 
 

@@ -108,7 +108,7 @@ num = 12
            -> trimLeft() or trimStart()
            -> trimRight() or trimEnd()
 
-12. split() -> splits a string into substrings using a speicified char
+12. split() -> splits a string into substrings using a specified char
 13. replace() -> replace a char with another
 *Numeric Operations*
 1. Addition -> +
@@ -284,6 +284,7 @@ num = 12
 9.reverse -> reverses the order of an array 
 10.includes -> checks whether an element is contained in an array
 11.sort -> sorts array items in alphabetical order
+12.join -> used to combine array elements using a specified char
 
    *Task*
 1.Find out what concat(), includes(),reverse(),sort() methods do and attempt to use them
@@ -323,61 +324,74 @@ num = 12
 2. In the structure below, output: "PostgreSQL" and "Deploy to Netlify"
 
       const userProfile = {
-      id: 101,
-      name: {
-         first: "Brian",
-         last: "Letting",
-      },
-      contact: {
-         email: "jeff@example.com",
-         phones: ["+254700000001", "+254700000002"],
-      },
-      address: {
-         current: {
-            city: "Nairobi",
-            street: "Westlands Ave",
-            postalCode: "00100",
+         id: 101,
+         name: {
+            first: "Brian",
+            last: "Letting",
          },
-         previous: [
+         contact: {
+            email: "jeff@example.com",
+            phones: ["+254700000001", "+254700000002"],
+         },
+         address: {
+            current: {
+               city: "Nairobi",
+               street: "Westlands Ave",
+               postalCode: "00100",
+            },
+            previous: [
+               {
+               city: "Eldoret",
+               street: "Main Street",
+               postalCode: "30100",
+               },
+               {
+               city: "Kisumu",
+               street: "Lake View Road",
+               postalCode: "40100",
+               },
+            ],
+         },
+         preferences: {
+            theme: "dark",
+            language: "en",
+            notifications: {
+               email: true,
+               sms: false,
+               push: ["promotions", "updates"],
+            },
+         },
+         projects: [
             {
-            city: "Eldoret",
-            street: "Main Street",
-            postalCode: "30100",
+               id: 1,
+               name: "POS System",
+               technologies: ["React", "FastAPI", "PostgreSQL"],
+               tasks: [
+               { title: "Set up DB", done: true },
+               { title: "Design UI", done: false },
+               ],
             },
             {
-            city: "Kisumu",
-            street: "Lake View Road",
-            postalCode: "40100",
+               id: 2,
+               name: "Portfolio Website",
+               technologies: ["HTML", "CSS", "JavaScript"],
+               tasks: [
+               { title: "Create About Page", done: true },
+               { title: "Deploy to Netlify", done: false },
+               ],
             },
          ],
-      },
-      preferences: {
-         theme: "dark",
-         language: "en",
-         notifications: {
-            email: true,
-            sms: false,
-            push: ["promotions", "updates"],
-         },
-      },
-      projects: [
-         {
-            id: 1,
-            name: "POS System",
-            technologies: ["React", "FastAPI", "PostgreSQL"],
-            tasks: [
-            { title: "Set up DB", done: true },
-            { title: "Design UI", done: false },
-            ],
-         },
-         {
-            id: 2,
-            name: "Portfolio Website",
-            technologies: ["HTML", "CSS", "JavaScript"],
-            tasks: [
-            { title: "Create About Page", done: true },
-            { title: "Deploy to Netlify", done: false },
-            ],
-         },
-      ],
       };
+
+*Task3*
+1. Remove a middle character: Given "planet", produce "planet" without the third character, resulting in "planet" with the a removed: "plnet".
+
+2. Compare fractions: Given a = 3, b = 7, c = 4, d = 9, determine which fraction is larger without dividing the fractions.
+
+3. Insert a character: Given "helloworld", produce "hello-world" by inserting a hyphen
+
+4. Discount calculator: A customer gets a 5% discount for spending at least 1,000 and a 15% discount for spending at least 5,000. Calculate the final price.
+
+5. Electricity billing: Calculate a bill using these rates: the first 100 units cost 5 per unit, the next 100 cost 8 per unit, and units above 200 cost 12 per unit.
+
+*JS LOOPS*
