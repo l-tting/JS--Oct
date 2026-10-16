@@ -43,7 +43,32 @@ console.log(fruits[1])
 console.log(fruits[2])
 console.log(fruits[3])
 
-for(let i=0; i<= 3 ; i++){
+for(let i=0; i < fruits.length ; i++){
     console.log(fruits[i])
 }
 
+
+let i = 1
+
+while ( i <= 10 ){
+
+    console.log(i)
+    i++
+}
+
+
+
+for(let i = 1; i <= 10 ; i++){
+    for(let j=2; j<= 5; j++){
+        for(let k = 3; k<= 5;k++){
+            console.log(i,j,k)
+        }
+    }
+}
+
+1,2,3
+1,2,4
+1,2,5
+1,3,3
+1,3,4
+1,3,5

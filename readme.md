@@ -429,6 +429,7 @@ num = 12
 
 
 *while loop*
+   -> is only concerned with the condition -> as long as the condition is met the loop keeps running
 *Nested Loops*
 
 
@@ -436,3 +437,31 @@ num = 12
 *task*
 slide 82
 
+
+0-50m           51-100m           >100m
+////             //
+
+
+let x = 6
+
+
+RAM
+ROM -> 
+
+
+let x = 5
+
+
+*NESTED LOOPS* 
+--> A loop within another loop
+
+
+for(let i = 0; i <= 10; i++){
+    for( let j= 0 ; j<= 5; j++){
+        ///-------
+    }
+}
+For every single iteration of the outer loop , the inner loop must execute to completion
+
+*TASK*
+Link in slide 83 intermediary questions -> questions 1 to 10
