@@ -464,4 +464,8 @@ for(let i = 0; i <= 10; i++){
 For every single iteration of the outer loop , the inner loop must execute to completion
 
 *TASK*
-Link in slide 83 intermediary questions -> questions 1 to 10
+Link in slide 83 intermediary questions -> questions 1 to 
+
+
+*TASK*
+-> questions 12,13,14

@@ -39,7 +39,7 @@ else:
 prods = [['omo','30kshs','300'], ['milk','50kshs','200'],['bread','45kshs','359'], ['coffee','5kshs','79']]
 
 total_stock = 0
-for i in range(0,len(prods)):
+for i in prods:
     stock = float(prods[i][2])
     total_stock += stock
 

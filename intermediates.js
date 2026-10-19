@@ -101,6 +101,7 @@ for(let i=0; i < prods.length ; i++){
 
     let stock = Number(prods[i][2])
     total_stock += stock
+    
 }
 
 console.log(total_stock)
