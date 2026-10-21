@@ -469,3 +469,59 @@ Link in slide 83 intermediary questions -> questions 1 to
 
 *TASK*
 -> questions 12,13,14
+
+
+*FUNCTIONS*
+-> A block of reusable code meant to perform a specific task
+
+*Why use functions?*
+1.Reusability
+2.Modularity
+3.Code organization and maintanability
+4.Scalability
+5.Better debugging
+
+
+*Parts of a function*
+1.Function definition
+  -> function keyword + function name + possible parameters
+2.Function body
+  -> block containing the specific task to be executed by the function
+3.Function call
+  -> calling a function by its name so that it executes the task in the function body
+
+*Syntax of a function in JS*
+
+function function_name(){
+    //function body
+}
+
+e.g. function check_even(){
+     ....
+}
+
+function check_even(x){
+   .....
+}
+
+check_even() -> func call
+
+*Making functions reusable*
+-> a function is made reusable by allowing it to take parameters
+
+*parameters vs arguments*
+Parameter : a placeholder value passed in the function definition meant to make a function reusable .
+    -> It is not a real value
+Argument : real value passed in place of the parameters when calling the function 
+    -> It is a real value
+
+N/B:- The no and order of parameters must match the no and order of arguments
+
+
+-> Functions typically use the return keyword instead of a direct console.log()
+*return* -> gives back a result after a function has executed its task and signifies the end of the function
+-> No code after the return keyword can be executed
+
+
+*task*
+slide 83 intermediate tasks -> redo questions 1 to 6 using JavaScript functions
