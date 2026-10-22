@@ -525,3 +525,6 @@ N/B:- The no and order of parameters must match the no and order of arguments
 
 *task*
 slide 83 intermediate tasks -> redo questions 1 to 6 using JavaScript functions
+
+
+*SCOPE*
