@@ -129,30 +129,83 @@ let sales = [
 ];
 
 
-let total_company_sales = 0
-let highest_sales = 0
-let highest_branch = ""
 
-for(let i = 0; i < sales.length; i++ ){
-    
-    let branch_total = 0
-    for(let j= 1; j < sales[i].length; j++ ){
-        branch_total += sales[i][j]
+
+function check_company_analytics(sales_array){
+    let total_company_sales = 0
+    let highest_sales = 0
+    let highest_branch = ""
+    let average
+    let branch_total
+
+
+    for(let i = 0; i < sales_array.length; i++ ){
+        
+        branch_total = 0
+        for(let j= 1; j < sales_array[i].length; j++ ){
+            branch_total += sales_array[i][j]
+        }
+
+
+        total_company_sales += branch_total
+
+
+        console.log(`${sales[i][0]} : `,branch_total)
+
+        if(branch_total > highest_sales){
+            highest_sales = branch_total
+            highest_branch = sales_array[i][0]
+        }
+        average = total_company_sales / 15
+
     }
-
-    total_company_sales += branch_total
-
-    console.log(`${sales[i][0]} : `,branch_total)
-
-    if(branch_total > highest_sales){
-        highest_sales = branch_total
-        highest_branch = sales[i][0]
-    }
-
+    return {"Total company sales": total_company_sales,"branch total": branch_total,
+             "highest sales branch":highest_branch, "average_daily_sales": average }
 
 }
 
-console.log(total_company_sales) //171000
-console.log(highest_branch)
+let get_data = check_company_analytics(sales)
+console.log(get_data)
 
 
+//scope
+
+
+
+let x = 25
+
+function test_scope(){
+    console.log(x)
+}
+
+test_scope() //25
+console.log(x) //25
+
+
+
+
+
+function test_scope2(){
+    let y = 30
+    console.log(y)
+}
+
+test_scope2() //30
+
+console.log(y) //undefined error
+
+
+// TASK 15: Using Python or PHP or Java or Ruby or JavaScript
+// Write a program that takes input of someone's basic salary and benefits,
+//  adds them to find the gross salary then uses  the gross salary to find the NHIF. 
+// To find the Kenya NHIF Rate using THIS LINK:  
+
+
+let basic_salary = Number(prompt("Enter basic salary"))
+let benefits= Number(prompt("Enter basic salary"))
+
+function calculate_gross(a,b){
+    return a + b
+}
+
+let gross_salary = calculate_gross(basic_salary, benefits)

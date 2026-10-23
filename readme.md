@@ -526,5 +526,22 @@ N/B:- The no and order of parameters must match the no and order of arguments
 *task*
 slide 83 intermediate tasks -> redo questions 1 to 6 using JavaScript functions
 
-
 *SCOPE*
+--> Determines where a variable can be accessed in a program
+-> We have 2 types of scope:
+*1.Global Scope*
+  --> This contains global variables and data
+  -> Global variables and data are accessible in the entire program
+  -> global variables are accessible in both the local and global scope
+*2.Local Scope*
+  --> Contains local variables and data
+  -> Local variables are only accessible within their defined block
+
+
+*TASK*
+_Create a new project called TaxCalculator and have the following files:
+1. index.html -> must be called exactly that
+2. tax.js
+
+-> Do questions 15 to 20 in the intermediate tasks (slide 83 link) -> must use functions for each question
+-> Once done push to Github and share Github link
